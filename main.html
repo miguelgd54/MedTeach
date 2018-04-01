@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>MedTeach</title>
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link href="css/materialize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway"
+    rel="stylesheet">
+    <style>
+    * {
+      font-family: "Raleway", sans-sherif;
+    }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <div class="nav-wrapper">
+          <a style="-webkit-animation: fadein 1.5s;"href="#"
+            class="brand-logo center">The Human Body</a>
+        </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col offset-s2">
+        <img src="pics/human.png" style="-webkit-animation: fadein 1.5s;" usemap="#humanmap"/>
+          <map name="humanmap">
+            <area class="heart" shape="rect" coords="225,225,300,345" alt="Heart"
+              href="html/heart.html" data-title="Cardiac diseases:
+              Based on attributes such as chest pain type, resting blood pressure, cholesterol levels
+              etc., find out the linkelihood of having a heart disease of a patient based on past data">
+            <area class="liver" shape="poly" coords="160,350,170,440,320,350" alt="Liver" href="html/liver.html"
+              data-title="Liver diseases: Based on attributes such as corpuscular volume, alkaline phosphotase
+              levels, alcohol consumption etc., find out the linkelihood of a patient having a liver disease
+              based on past data">
+            <area shape="poly" coords="210,220,150,360,220,335" alt="lungs" href="html/lungs.html"
+               data-title="Lung diseases: Based on attributes such as age, smoking levels etc., find out
+               the linkelihood of a patient having a liver disease based on past data">
+            <area shape="poly" coords="270,220,305,335,360,330" alt="lungs" href="html/lungs.html"
+              data-title="Lung diseases: Based on attributes such as age, smoking levels etc., find out
+              the linkelihood of a patient having a liver disease based on past data">
+              <area shape="circle" coords="255,50,50" alt="brain" href="#"
+              data-title="Brain diseases: Based on attributes such as age, prelevance of other Brain
+              diseases, scores on cognitive tests etc., find out
+              the linkelihood of a patient having a brain disease based on past data">
+          </map>
+        </div>
+      </div>
+
+    </div>
+    <img style="position: absolute; left: 850px;
+    top: 180px; height:300px; -webkit-animation: fadein 1.5s;" src="pics/doctor.png"/>
+    <script src="js/main.js"></script>
+  </body>
+</html>

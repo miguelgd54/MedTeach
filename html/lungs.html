@@ -1,0 +1,57 @@
+<html>
+<head>
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/materialize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway"
+  rel="stylesheet">
+  <style>
+  * {
+    font-family: "Raleway", sans-sherif;
+  }
+  </style>
+</head>
+<body>
+  <nav>
+      <div class="nav-wrapper">
+        <a href="#"
+          class="brand-logo center">The Lungs</a>
+      </div>
+  </nav>
+  <div class="container">
+    <div style="center-align"class="row">
+      <div class="col s2 offset-s4">
+        <p> Smoking levels</p>
+        <div class="slidecontainer">
+          <input style="height:30px;width:100px" type="range" min="1"
+            max="127" value="0" class="slider" id="myRange1">
+        </div>
+        <p>Value: <span id="value1"></span></p>
+      </div>
+
+      <div class="col s2">
+        <p>Age</p>
+        <div class="slidecontainer">
+          <input style="height:30px;width:100px" type="range" min="1"
+          max="127" value="0" class="slider" id="myRange2">
+        </div>
+        <p>Value: <span id="value2"></span></p>
+      </div>
+      </div>
+    </div>
+
+    <div class="row colorpicker">
+      <div class="col offset-s5" s4>
+        <img style="height:250px;"src = "../pics/lungs.png" class="lungs"/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col offset-s4 ">
+        <canvas id="myCanvas" width="400" height="10"
+          style="border:1px solid #d3d3d3;">
+      </div>
+    </div>
+  </div>
+  <script src="../js/lung.js"></script>
+</body>
+</html>

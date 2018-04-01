@@ -1,0 +1,74 @@
+<html>
+<head>
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/materialize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway"
+  rel="stylesheet">
+  <style>
+  * {
+    font-family: "Raleway", sans-sherif;
+  }
+  </style>
+</head>
+<body>
+  <nav>
+      <div class="nav-wrapper">
+        <a style="-webkit-animation: fadein 2s;"href="#"
+          class="brand-logo center">The Liver</a>
+      </div>
+  </nav>
+  <div class="container"style="-webkit-animation: fadein 2s;">
+    <div style="center-align" class="row">
+      <div class="col s2 offset-s2">
+        <p>Corpuscular volume</p>
+        <div class="slidecontainer">
+          <input style="height:30px;width:100px" type="range" min="1"
+            max="63" value="0" class="slider" id="myRange1">
+        </div>
+        <p>Value: <span id="value1"></span></p>
+      </div>
+
+      <div class="col s2">
+        <p>Alcohol consumption</p>
+        <div class="slidecontainer">
+          <input style="height:30px;width:100px" type="range" min="1"
+          max="63" value="0" class="slider" id="myRange2">
+        </div>
+        <p>Value: <span id="value2"></span></p>
+      </div>
+
+      <div class="col s2">
+        <p>alkaline phosphotase levels</p>
+        <div class="slidecontainer">
+          <input style="height:30px;width:100px" type="range" min="1"
+          max="63" value="0" class="slider" id="myRange3">
+        </div>
+        <p>Value: <span id="value3"></span></p>
+      </div>
+
+      <div class="col s2">
+        <p>Age</p>
+        <div class="slidecontainer">
+          <input style="height:30px;width:100px" type="range" min="1"
+          max="63" value="0" class="slider" id="myRange4">
+        </div>
+        <p>Value: <span id="value4"></span></p>
+      </div>
+    </div>
+
+    <div class="row colorpicker">
+      <div class="col offset-s4" s4>
+        <img style="height:140px;"src = "../pics/liver.png" class="human-liver"/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col offset-s3 ">
+        <canvas id="myCanvas" width="400" height="10"
+          style="border:1px solid #d3d3d3;">
+      </div>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
